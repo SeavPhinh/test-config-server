@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: department-service
+  datasource:
+    url: jdbc:postgresql://localhost:5200/department_db
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8081
